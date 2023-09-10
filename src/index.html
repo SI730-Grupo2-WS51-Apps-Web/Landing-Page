@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--~~~~~~~~~~~~~~~ Favicon ~~~~~~~~~~~~~~~-->
+    <link rel="shortcut icon" href="img/smaller.png" type="image/x-icon">
+    <!--~~~~~~~~~~~~~~~ Font Awesome ~~~~~~~~~~~~~~~-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--~~~~~~~~~~~~~~~ Remix Icon ~~~~~~~~~~~~~~~-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!--~~~~~~~~~~~~~~~ CSS ~~~~~~~~~~~~~~~-->
+    <link href="/dist/output.css" rel="stylesheet" />
+   
+
+    <title>Akira</title>
+  </head>
+  <body>
+    <!--~~~~~~~~~~~~~~~ Header ~~~~~~~~~~~~~~~-->
+    <header class="bg-blackColor fixed top-0 left-0 w-full z-50">
+        <nav class="container relative h-14 flex justify-between items-center">
+            <div>
+                <a href="index.html" class="text-2x1 uppercase">
+                    <img class="w-2/4 h-auto" src="img/Akira.png" alt="Akira icon">
+                </a>
+            </div>
+            
+            <div class="hidden absolute top-0 left-0 w-full py-14 bg-nedded rounded-lg 
+            border-b border-secondaryColor md:block md:static md:bg-black md:py-0 md:border-none 
+            md:w-auto md:ml-auto" id="nav-menu">
+                <ul class="flex flex-col text-center gap-5 md:flex-row">
+                    <li>
+                        <a href="#home" class="nav__link text-blackColor md:text-white hover:text-secondaryColor hover:font-semibold ease-in duration-200">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about" class="nav__link text-blackColor md:text-white hover:text-secondaryColor hover:font-semibold ease-in duration-200">AboutUs</a>
+                    </li>
+                    <li>
+                        <a href="#menu" class="nav__link text-blackColor md:text-white hover:text-secondaryColor hover:font-semibold ease-in duration-200">Menu</a>
+                    </li>
+                    <li>
+                        <a href="#review" class="nav__link text-blackColor md:text-white hover:text-secondaryColor hover:font-semibold ease-in duration-200">Review</a>
+                    </li>
+                        <a href="#contact" class="nav__link text-blackColor md:text-white hover:text-secondaryColor hover:font-semibold ease-in duration-200">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="absolute top-[0.7rem] right-4 text-2x1 cursor-pointer
+                text-blackColor md:hidden" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <div class="flex items-center gap-5">
+                <i class="ri-moon-line cursor-pointer ml-4 text-xl"></i>
+                
+                <div class="md:hidden" id="hamburger">
+                    <i class="ri-menu-2-line cursor-pointer text-xl"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+    
+<!--~~~~~~~~~~~~~~~ Home ~~~~~~~~~~~~~~~-->
+<section id="hero-section">
+    <div class="hero h-70" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/src/img/anime/xie.jpg');">
+        <div class="hero-text absolute bottom-20 left-10 p-5">
+            <p class="text-lg">Nuevos Ingresos</p>
+            <h1 class="text-4xl font-bold my-2">Kaiba Seto</h1>
+            <p class="text-lg">Yu-Gi-Oh</p>
+            <a href="#" class="bg-blackColor hover:bg-secondaryColor text-white py-2 px-4 rounded-full inline-block mt-4 transition duration-300 ease-in-out border-white border-4">Comprar</a>
+        </div>
+    </div>
+</section>   
+  <!--~~~~~~~~~~~~~~~ Category pero de ultimas figuras ~~~~~~~~~~~~~~~-->
+  <section id="latest" class="flex flex-col items-center justify-center text-center pt-8 pb-8">
+      <div class="text-blackColor pb-[3rem] pt-[3rem]">
+          <h2 class="font-bold text-4xl">ÚLTIMAS FIGURAS LLEGADAS AL SITIO WEB</h2>
+          <p class="font-bold text-lg">¡Colecciónalas todas y muéstrale a tus amigos!</p>
+      </div>
+      <div id="container-anime">
+        <div class="image-container">
+            <a href="paginas_compras/Figura-xiaoXieEr.html">
+            <img src="/src/img/anime/xie.jpg" class="w-64 h-[329px] object-cover" alt="imagen_xie">
+            <div class="poptext">
+              <p>Xiao Xun Er</p>
+              <p style="font-weight: normal">Escala 1/4</p>
+            </div>
+            </a>
+          </div>
+
+          <div class="image-container">
+            <a href="paginas_compras/Figura-Stein.html"><img src="/src/img/anime/chica2.jpeg" class="w-64 h-[329px] object-cover" alt="imagen_chica">
+            <div class="poptext">
+              <p>Makise Kurisu</p>
+              <p style="font-weight: normal">Escala 1/7</p>
+            </div>
+            </a>
+          </div>
+
+          <div class="image-container">
+            <a href="paginas_compras/Figura-Hunter.html"><img src="/src/img/anime/hunter.jpg" class="w-64 h-[329px] object-cover" alt="imagen_hunter">
+            <div class="poptext">
+              <p>HxH: Hisoka</p>
+              <p style="font-weight: normal">Escala 1/7</p>
+            </div>
+            </a>
+          </div>
+
+          <div class="image-container">
+            <a href="paginas_compras/Figura-TG.html"><img src="/src/img/anime/pelea.jpg" class="w-64 h-[329px] object-cover" alt="imagen_pelea">
+            <div class="poptext">
+              <p>Kaneki vs Wall Tiger</p>
+              <p style="font-weight: normal">Escala 1/6</p>
+            </div>
+            </a>
+          </div>
+
+          <div class="image-container">
+            <a href="paginas_compras/Figura-Dorohedoro.html"><img src="/src/img/anime/pelead.jpg" class="w-64 h-[329px] object-cover" alt="imagen_peleas">
+            <div class="poptext">
+              <p>Caiman & Nikaido</p>
+              <p style="font-weight: normal">Escala 1/6</p>
+            </div>
+            </a>
+          </div>
+          <div class="image-container">
+            <a href="paginas_compras/Figura-Asuka.html"><img src="/src/img/anime/chibi.jpg" class="w-64 h-[329px] object-cover" alt="imagen_chibi">
+            <div class="poptext">
+              <p>Azuka Piloto</p>
+              <p style="font-weight: normal">Escala 1/12</p>
+            </div>
+            </a>
+          </div>
+
+          <div class="image-container">
+            <a href="paginas_compras/Figura-LieInApril.html"><img src="/src/img/anime/chica.jpg" class="w-64 h-[329px] object-cover" alt="imagen_chica">
+            <div class="poptext">
+              <p>Kaori Miyazono</p>
+              <p style="font-weight: normal">Escala 1/4</p>
+            </div>
+            </a>
+          </div>
+
+          <div class="image-container">
+            <a href="paginas_compras/Figura-ChainsawMan.html"><img src="/src/img/anime/chain.jpg" class="w-64 h-[329px] object-cover" alt="imagen_chainsawman">
+            <div class="poptext">
+              <p>Chainsaw man: Aki</p>
+              <p style="font-weight: normal">Escala 1/7</p>
+            </div>
+            </a>
+          </div>
+      </div>
+  </section>
+
+  <!--~~~~~~~~~~~~~~~ Category pero de kpop ~~~~~~~~~~~~~~~-->
+  <section id="kpop" class="flex-col items-center justify-center text-center pt-20 pb-20 mx-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8">
+      <div class="text-blackColor pb-[3rem] pt-[3rem]">
+          <h2 class="font-bold text-4xl">ÚLTIMOS LANZAMIENTOS DE MÚSICA ASIÁTICA</h2>
+          <p class="font-bold text-lg">¡Para todos los audiofilos que llevaban esperando con ansias!</p>
+      </div>
+      <div id="container-kpop">
+          
+        <div class="image-container">
+            <a href="paginas_compras/Kpop-Younite.html">
+              <img src="/src/img/Kpop/younite.jpg" class="w-64 h-[329px] object-cover" alt="Imagen de Younite">
+              <div class="poptext">
+                <p>YOUNITE</p>
+                <p style="font-weight: normal">YOUNI-ON</p>
+              </div>
+            </a>
+          </div>
+          <div class="image-container">
+            <a href="paginas_compras/Kpop-NewJeans.html">
+              <img src="/src/img/Kpop/NewJeans.jpg" class="w-64 h-[329px]  object-cover"  alt="Imagen de NewJeans">
+              <div class="poptext">
+                <p>NewJeans 1ST</p>
+                <p style="font-weight: normal">NewJeans</p>
+              </div>
+            </a>
+          </div>
+          <div class="image-container">
+            <a href="paginas_compras/Kpop-BTS.html">
+              <img src="/src/img/Kpop/bts.jpg" class="w-64 h-[329px]  object-cover"  alt="Imagen de BTS">
+              <div class="poptext">
+                <p>PROOF</p>
+                <p style="font-weight: normal">BTS</p>
+              </div>
+            </a>
+          </div>
+          <div class="image-container">
+            <a href="paginas_compras/Kpop-BTSbutter.html">
+              <img src="/src/img/Kpop/butter.jpg" class="w-64 h-[329px]  object-cover"  alt="Imagen de BTS-Butter">
+              <div class="poptext">
+                <p>Butter</p>
+                <p style="font-weight: normal">BTS</p>
+              </div>
+            </a>
+          </div>
+          <div class="image-container">
+            <a href="paginas_compras/Kpop-Taeyong.html">
+              <img src="/src/img/Kpop/taeyong.jpg" class="w-64 h-[329px]  object-cover"  alt="Imagen de taeyong">
+              <div class="poptext">
+                <p>Shalala</p>
+                <p style="font-weight: normal">TAEYONG</p>
+              </div>
+            </a>
+          </div>
+          <div class="image-container">
+            <a href="paginas_compras/Kpop-Queendom.html">
+              <img src="/src/img/Kpop/red-velvet-queendom-6th-mini-album.jpg" class="w-64 h-[329px]  object-cover"  alt="Imagen de Queendom">
+              <div class="poptext">
+                <p>Queendom</p>
+                <p style="font-weight: normal">Red Velvet</p>
+              </div>
+            </a>
+          </div>
+          <div class="image-container">
+            <a href="paginas_compras/Kpop-Redmare.html">
+              <img src="/src/img/Kpop/redmare.jpg" class="w-64 h-[329px]  object-cover"  alt="Imagen de REDMARE">
+              <div class="poptext">
+                <p>REDMARE</p>
+                <p style="font-weight: normal">Red Velvet</p>
+              </div>
+            </a>
+          </div>
+          <div class="image-container">
+            <a href="paginas_compras/Kpop-Serafim.html">
+              <img src="/src/img/Kpop/fearless.jpg" class="w-64 h-[329px]  object-cover"  alt="Imagen de Sserafim">
+              <div class="poptext">
+                <p>Fearless</p>
+                <p style="font-weight: normal">LE SSERAFIM</p>
+              </div>
+            </a>
+          </div>
+      </div>
+  </section>
+  <!--~~~~~~~~~~~~~~~ Category pero de lectura ~~~~~~~~~~~~~~~-->
+  <section id="latest" class="flex flex-col items-center text-center py-12">
+      <div class="text-blackColor pb-[3rem] pt-[3rem]">
+          <h2 class="font-bold text-4xl">RECIÉN LLEGADOS A LA SECCIÓN DE LECTURA</h2>
+          <p class="font-bold text-lg">¡Nuevos estrenos para nuestros comelibros favoritos!</p>
+      </div>
+      <div id="img-container">
+        <div class="image-container">
+            <a href="paginas_compras/Lectura-Cannibal.html">
+              <img src="/src/img/Lectura/cannibal.jpg" class="w-[250px] h-[300px]" alt="cannibal">
+              <div class="poptext">
+                <p>Cannibal</p>
+                <p style="font-weight: normal">Tomo 8</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="image-container">
+            <a href="paginas_compras/Lectura-Jujutsu.html">
+            <img src="/src/img/Lectura/jujutsu.jpg" class="w-[250px] h-[300px]" alt="jujutsu">
+            <div class="poptext">
+              <p>Jujutsu Kaisen</p>
+              <p style="font-weight: normal">Tomo 21</p>
+            </div>
+            </a>
+          </div>
+
+          <div class="image-container">
+            <a href="paginas_compras/Lectura-WarIsLove.html">
+              <img src="/src/img/Lectura/kaguya.jpg" class="w-[250px] h-[300px]" alt="kaguya">
+              <div class="poptext">
+                <p>Kaguya-sama</p>
+                <p style="font-weight: normal">Tomo 25</p>
+              </div>
+            </a>
+          </div>
+
+        <div class="image-container">
+          <a href="paginas_compras/Lectura-BlueLock.html">
+            <img src="/src/img/Lectura/bluelock.jpg" class="w-[250px] h-[300px]" alt="bluelock">
+            <div class="poptext">
+              <p>Bluelock</p>
+              <p style="font-weight: normal">Tomo 15</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="image-container">
+          <a href="paginas_compras/Lectura-Zombie.html">
+              <img src="/src/img/Lectura/zombie.jpg" class="w-[250px] h-[300px]" alt="zombie">
+              <div class="poptext">
+                <p>Zom100</p>
+                <p style="font-weight: normal">Tomo 13</p>
+              </div>
+          </a>
+        </div>
+
+        <div class="image-container">
+          <a href="paginas_compras/Lectura-JunjiIto.html">
+              <img src="/src/img/Lectura/junji.jpg" class="w-[250px] h-[300px]" alt="black Paradox">
+              <div class="poptext">
+                <p>Black Paradox</p>
+                <p style="font-weight: normal">Tomo 1</p>
+              </div>
+          </a>
+        </div>
+
+        <div class="image-container">
+            <a href="paginas_compras/Lectura-Haikyu.html">
+              <img src="/src/img/Lectura/haikyu.jpg" class="w-[250px] h-[300px]" alt="haikyu">
+              <div class="poptext">
+                <p>Haikyuu</p>
+                <p style="font-weight: normal">Tomo 22</p>
+              </div>
+            </a>
+        </div>
+        <div class="image-container">
+          <a href="paginas_compras/Lectura-3x3Eyes.html">
+            <img src="/src/img/Lectura/eyes.jpg" class="w-[250px] h-[300px]" alt="3x3 eyes">
+            <div class="poptext">
+              <p>3x3 Eyes</p>
+              <p style="font-weight: normal">Tomo 21</p>
+            </div>
+          </a>
+        </div>
+        <div class="image-container">
+          <a href="paginas_compras/Lectura-Ippo.html">
+            <img src="/src/img/Lectura/ippo.jpg" class="w-[250px] h-[300px]" alt="ippo">
+            <div class="poptext">
+              <p>Hajime no Ippo</p>
+              <p style="font-weight: normal">Tomo 8</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="image-container">
+          <a href="paginas_compras/Lectura-Tomie.html">
+            <img src="/src/img/Lectura/tomie.jpg" class="w-[250px] h-[300px]" alt="tomie">
+            <div class="poptext">
+              <p>TOMIE</p>
+              <p style="font-weight: normal">Tomo 1</p>
+            </div>
+          </a>
+        </div>
+      </div>
+  </section>
+  <!--~~~~~~~~~~~~~~~ Distribuidores ~~~~~~~~~~~~~~~-->
+  <section id="distribuidores" class="flex flex-col items-center text-center mt-80 mb-80">
+      <div id="container-distribuidores">
+          <img src="/src/img/Alianzas/Good-Smile-Company.jpg" class="w-[150px] h-auto">
+          <img src="/src/img/Alianzas/figurama.png" class="w-[150px] h-auto">
+          <img src="/src/img/Alianzas/alter.png" class="w-[150px] h-auto">
+          <img src="/src/img/Alianzas/megahouse.png" class="w-[150px] h-auto">
+          <img src="/src/img/Alianzas/meccha.jpg" class="w-[150px] h-auto">
+          <img src="/src/img/Alianzas/aniplex.png" class="w-[150px] h-auto">
+          <img src="/src/img/Alianzas/kotobukiya.png" class="w-[150px] h-auto">
+          <img src="/src/img/Alianzas/musicPlaza.jpg" class="w-[150px] h-auto">
+          <img src="/src/img/Alianzas/kpopmart.jpg" class="w-[150px] h-auto">
+          <img src="/src/img/Alianzas/sm.jpg" class="w-[150px] h-auto">
+          <img src="/src/img/Alianzas/kpoptown.jpg" class="w-[150px] h-auto">
+          <img src="/src/img/Alianzas/ktown4u.jpg" class="w-[150px] h-[50px]">
+          <img src="/src/img/Alianzas/mymusictaste.png" class="w-[150px] h-auto">
+          <img src="/src/img/Alianzas/Mandarake_logo.png" class="w-[150px] h-auto">
+          <img src="/src/img/Alianzas/ebook.png" class="w-[150px] h-auto">
+          <img src="/src/img/Alianzas/honto.png" class="w-[150px] h-[50px]">
+          <img src="/src/img/Alianzas/alianza_3.jpg" class="w-[150px] h-auto">
+          <img src="/src/img/Alianzas/alianza.png" class="w-[150px] h-auto">
+
+      </div>
+      <div id="dos-distribuidores" class="gap-[2rem] items-center justify-center ">
+          <img src="/src/img/Alianzas/alianza_2.png" class="w-[150px] h-auto py-[3rem]">
+          <img src="/src/img/Alianzas/bts_shop.jpg" class="w-[150px] h-[50px]">
+      </div>
+      
+  </section>
+
+  </main>
+  <!--~~~~~~~~~~~~~~~ Footer ~~~~~~~~~~~~~~~-->
+  <footer>
+      <div id="footer-container" class="p-10 text-whiteColor">
+          <div class="max-w-7xl mx-auto">
+              <div id="contenido" class="grid grid-cols-l md:grid-cols-4 lg:grid-cols-2 gap-2">
+                  <div>
+                      <img src="/src/img/smaller.png" alt="logo_cara">
+                  </div>
+                  <div class="mb-5">
+                      <h4 class="text2xl text-whiteColor pb-4 font-medium"><strong>Información</strong></h4>
+                      <ul class="text-whiteColor font-normal">
+                          <li class="pb-4"><a href="login.html" class="hover:text-secondaryColor">Mi cuenta </a></li>
+                          <li class="pb-4"><a href="#" class="hover:text-secondaryColor">Info de Compra</a></li>
+                          <li class="pb-4"><a href="#" class="hover:text-secondaryColor">Políticas</a></li>
+                      </ul>
+                  </div>
+                  <div class="mb-5">
+                      <h4 class="pb-4 font-medium"><strong>Menú Principal</strong></h4>
+                      <ul class="text-whiteColor font-normal">
+                          <li class="pb-4"><a href="index.html" class="hover:text-secondaryColor">Inicio</a></li>
+                          <li class="pb-4"><a href="#" class="hover:text-secondaryColor">Tienda</a></li>
+                          <li class="pb-4"><a href="contactanos.html" class="hover:text-secondaryColor">Contáctanos</a></li>
+                      </ul>
+                  </div>
+                  <div class="mb-5">
+                      <div>
+                          <h4 class="pb-4 font-medium"><strong>Síguenos</strong></h4>
+                          <ul class="text-whiteColor font-normal">
+                              <li class="pb-4">
+                                  <a href="#" class="w-4 h-4 inline-block">
+                                      <i class="fa-brands fa-tiktok"></i>
+                                  </a>
+                                  <a id="sin_iconos" href="#" class="hover:text-secondaryColor ml-2">Tiktok</a>
+                              </li>
+                              <li class="pb-4">
+                                  <a href="#" class="w-4 h-4 inline-block">
+                                      <i class="fa-brands fa-instagram"></i>
+                                  </a>
+                                  <a href="#" id="sin_iconos" class="hover:text-secondaryColor ml-2">Instagram</a>
+                              </li>
+                              <li class="pb-4">
+                                  <a href="#" class="w-4 h-4 inline-block">
+                                      <i class="fa-brands fa-facebook-f"></i>
+                                  </a>
+                                  <a href="#" id="sin_iconos" class="hover:text-secondaryColor ml-2">Facebook</a>
+                              </li>
+                          </ul>
+                      </div>
+                      
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div>
+          <div id="footer-container" class="w-full text-whiteColor px-1">
+              <div class="max-w-7xl flex flex-col sm:flex-row py-4 mx-auto justify-starts items-start">
+                  <div class="">
+                      <div id="copyright" class="ml-20">
+                          © 2023 AKIRA, Powered by Lambders
+                      </div>
+                      
+                  </div>
+                  <div id="metodos" class="text-end text-xl text-white mb-2 md:hidden">
+                      <a href="#" class="mr-20 w-[60%] mx-1 inline-block pt-2">
+                          <img src="/src/img/Extras/metodosPago.png" alt="metodo de pago">
+                      </a>
+                  </div>                    
+              </div>
+          </div>
+      </div>
+  </footer>
+
+  <!--~~~~~~~~~~~~~~~ Main.js ~~~~~~~~~~~~~~~-->
+    <script src="main.js"></script>
+  </body>
+</html>
